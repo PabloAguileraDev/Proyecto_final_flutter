@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "589297709005",
+    "project_id": "lista-compra-53ede",
+    "storage_bucket": "lista-compra-53ede.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589297709005:android:6654e31195ff83b784de84",
+        "android_client_info": {
+          "package_name": "com.proyecto_final_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzMb7Y4-2pkbj9LYPW9VjdIdNb2EK1ybY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
