@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_final_flutter/screens/detallesProducto.dart';
-import 'package:proyecto_final_flutter/screens/listaProductos.dart';
+import 'package:proyecto_final_flutter/services/firebaseService.dart';
 import 'package:proyecto_final_flutter/screens/menuLateral.dart';
 import 'package:proyecto_final_flutter/services/apiService.dart';
 import 'package:provider/provider.dart';

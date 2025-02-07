@@ -1,0 +1,265 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.proyecto_final_flutter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package-visibility and
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:40:5-45:15
+18        <intent>
+18-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:41:9-44:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:42:13-72
+19-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:42:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:43:13-50
+21-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:43:19-48
+22        </intent>
+23    </queries>
+24    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+25    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:10:5-79
+26-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:10:22-76
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:11:5-67
+27-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:11:22-64
+28
+29    <permission
+29-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+30        android:name="com.proyecto_final_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.proyecto_final_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+34
+35    <application
+36        android:name="android.app.Application"
+36-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:4:9-42
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.13.1] C:\Users\PABLO\.gradle\caches\transforms-3\447c4116cc259dd3e2c329a0f03445cf\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+38        android:enableOnBackInvokedCallback="true"
+38-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:6:9-51
+39        android:extractNativeLibs="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:5:9-43
+41        android:label="La Lista de la Compra" >
+41-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:3:9-46
+42        <activity
+42-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:7:9-28:20
+43            android:name="com.proyecto_final_flutter.MainActivity"
+43-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:8:13-41
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+44-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:13:13-163
+45            android:exported="true"
+45-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:9:13-36
+46            android:hardwareAccelerated="true"
+46-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:14:13-47
+47            android:launchMode="singleTop"
+47-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:10:13-43
+48            android:taskAffinity=""
+48-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:11:13-36
+49            android:theme="@style/LaunchTheme"
+49-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:12:13-47
+50            android:windowSoftInputMode="adjustResize" >
+50-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:15:13-55
+51
+52            <!--
+53                 Specifies an Android theme to apply to this Activity as soon as
+54                 the Android process has started. This theme is visible to the user
+55                 while the Flutter UI initializes. After that, this theme continues
+56                 to determine the Window background behind the Flutter UI.
+57            -->
+58            <meta-data
+58-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:20:13-23:17
+59                android:name="io.flutter.embedding.android.NormalTheme"
+59-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:21:15-70
+60                android:resource="@style/NormalTheme" />
+60-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:22:15-52
+61
+62            <intent-filter>
+62-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:24:13-27:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:25:17-68
+63-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:25:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:26:17-76
+65-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:26:27-74
+66            </intent-filter>
+67        </activity>
+68        <!--
+69             Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+72-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:31:9-33:33
+73            android:name="flutterEmbedding"
+73-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:32:13-44
+74            android:value="2" />
+74-->C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\android\app\src\main\AndroidManifest.xml:33:13-30
+75
+76        <service
+76-->[:cloud_firestore] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[:cloud_firestore] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:8:18-89
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:16:13-37
+80            <meta-data
+80-->[:cloud_firestore] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+81-->[:cloud_firestore] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-134
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:cloud_firestore] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+83            <meta-data
+83-->[:firebase_core] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+84-->[:firebase_core] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_core] C:\Users\PABLO\Documents\DAM 2\ProgramacionMultimediaYDispositivos\proyecto_final_flutter\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:17:13-19:85
+87                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+87-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:18:17-122
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:19:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:20:13-22:85
+90                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+90-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:21:17-111
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\PABLO\.gradle\caches\transforms-3\e348d541da69827dd1308277d2cccf83\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:22:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\d6e4c497346e8eb6fbd2f7637df74859\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+93                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+93-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\d6e4c497346e8eb6fbd2f7637df74859\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\d6e4c497346e8eb6fbd2f7637df74859\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+96                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+96-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+98        </service>
+99
+100        <activity
+100-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PABLO\.gradle\caches\transforms-3\3ea85acb7dbe2059bbf54797c5bd5d4d\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PABLO\.gradle\caches\transforms-3\3ea85acb7dbe2059bbf54797c5bd5d4d\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PABLO\.gradle\caches\transforms-3\3ea85acb7dbe2059bbf54797c5bd5d4d\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PABLO\.gradle\caches\transforms-3\3ea85acb7dbe2059bbf54797c5bd5d4d\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+104
+105        <provider
+105-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+106            android:name="com.google.firebase.provider.FirebaseInitProvider"
+106-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+107            android:authorities="com.proyecto_final_flutter.firebaseinitprovider"
+107-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+108            android:directBootAware="true"
+108-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+109            android:exported="false"
+109-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+110            android:initOrder="100" />
+110-->[com.google.firebase:firebase-common:20.4.3] C:\Users\PABLO\.gradle\caches\transforms-3\ced6cba8fe3ab0d475d6e19e9a459406\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+111
+112        <uses-library
+112-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+113            android:name="androidx.window.extensions"
+113-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+114            android:required="false" />
+114-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+115        <uses-library
+115-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+116            android:name="androidx.window.sidecar"
+116-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+117            android:required="false" />
+117-->[androidx.window:window:1.2.0] C:\Users\PABLO\.gradle\caches\transforms-3\3afa2514ed50b72c1af7770d2b8d3bd2\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+118
+119        <meta-data
+119-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\PABLO\.gradle\caches\transforms-3\3d3643467ab254fa214d76f4b5b690c7\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+120            android:name="com.google.android.gms.version"
+120-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\PABLO\.gradle\caches\transforms-3\3d3643467ab254fa214d76f4b5b690c7\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+121            android:value="@integer/google_play_services_version" />
+121-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\PABLO\.gradle\caches\transforms-3\3d3643467ab254fa214d76f4b5b690c7\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+122
+123        <provider
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+124            android:name="androidx.startup.InitializationProvider"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+125            android:authorities="com.proyecto_final_flutter.androidx-startup"
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+126            android:exported="false" >
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\PABLO\.gradle\caches\transforms-3\462db5f7112590348a2d502fe1a0ad68\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+132                android:value="androidx.startup" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+133        </provider>
+134
+135        <receiver
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+136            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+137            android:directBootAware="false"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+138            android:enabled="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+139            android:exported="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+140            android:permission="android.permission.DUMP" >
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+141            <intent-filter>
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+142                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+143            </intent-filter>
+144            <intent-filter>
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+145                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+146            </intent-filter>
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+148                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+149            </intent-filter>
+150            <intent-filter>
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+151                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\PABLO\.gradle\caches\transforms-3\4d820214d6a986a85757998b649b8002\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+152            </intent-filter>
+153        </receiver>
+154    </application>
+155
+156</manifest>
