@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_final_flutter/screens/detallesProducto.dart';
 import 'package:proyecto_final_flutter/screens/listaProductos.dart';
 import 'package:proyecto_final_flutter/screens/menuLateral.dart';
-import 'package:proyecto_final_flutter/screens/screens.dart';
+import 'package:proyecto_final_flutter/services/apiService.dart';
 import 'package:provider/provider.dart';
 
 class Productos extends StatefulWidget {
@@ -34,7 +35,8 @@ class _ProductosState extends State<Productos> {
       });
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error al buscar productos: $e')),
+        const SnackBar(
+            content: Text('Se ha producido un error al buscar productos')),
       );
     } finally {
       setState(() {
@@ -81,6 +83,9 @@ class _ProductosState extends State<Productos> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
+                enabledBorder: const OutlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF4CAF50), width: 2),
+                ),
               ),
             ),
           ),
@@ -104,33 +109,44 @@ class _ProductosState extends State<Productos> {
             //Productos
             Expanded(
               child: ListView.builder(
-                itemCount: productos.length,
-                itemBuilder: (context, index) {
-                  final producto = productos[index];
-                  return Card(
-                    elevation: 4,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: ListTile(
-                      leading: Image.network(
-                        'https://spoonacular.com/cdn/ingredients_100x100/${producto['image']}',
-                        width: 50,
-                        height: 50,
-                        fit: BoxFit.fill,
-                        errorBuilder: (context, error, stackTrace) =>
-                            const Icon(Icons.broken_image, size: 50),
+                  itemCount: productos.length,
+                  itemBuilder: (context, index) {
+                    final producto = productos[index];
+                    return GestureDetector(
+                      onTap: () {
+                        //Navegar a la pantalla de detalles
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetallesProducto(productoId: producto['id']),
+                          ),
+                        );
+                      },
+                      child: Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: ListTile(
+                          leading: Image.network(
+                            'https://spoonacular.com/cdn/ingredients_100x100/${producto['image']}',
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.fill,
+                            errorBuilder: (context, error, stackTrace) =>
+                                const Icon(Icons.broken_image, size: 50),
+                          ),
+                          title: Text(producto['name']),
+                          trailing: IconButton(
+                            icon: const Icon(Icons.add),
+                            onPressed: () => agregarALista(producto['id']),
+                          ),
+                        ),
                       ),
-                      title: Text(producto['name']),
-                      trailing: IconButton(
-                        icon: const Icon(Icons.add),
-                        onPressed: () => agregarALista(producto['id']),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
+                    );
+                  }),
+            )
         ],
       ),
     );

@@ -8,7 +8,7 @@ class PantallaInicio extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("La Lista del Mercadona"),
+        title: const Text("La Lista de la compra"),
       ),
       drawer: const MenuLateral(),
       body: Center(
@@ -21,7 +21,7 @@ class PantallaInicio extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Text(
-              "Bienvenido a La Lista del Mercadona",
+              "Bienvenido a la lista de la compra",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

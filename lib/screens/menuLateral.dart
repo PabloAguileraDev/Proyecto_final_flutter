@@ -10,7 +10,7 @@ class MenuLateral extends StatelessWidget {
       child: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF4CAF50), Color(0xFF388E3C)], // Degradado verde
+            colors: [Color(0xFF4CAF50), Color(0xFF388E3C)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -19,9 +19,9 @@ class MenuLateral extends StatelessWidget {
           children: <Widget>[
             const UserAccountsDrawerHeader(
               accountName: Text(
-                "La lista del Mercadona",
+                "La lista de la compra",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
@@ -29,18 +29,14 @@ class MenuLateral extends StatelessWidget {
               accountEmail: Text(
                 "Hecho por Pablo Aguilera",
                 style: TextStyle(
-                  color: Colors.white70,
+                  color: Colors.black,
                   fontSize: 14,
                 ),
               ),
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/logo.png"),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                    Colors.black45, // Oscurece la imagen ligeramente
-                    BlendMode.darken,
-                  ),
+                  image: AssetImage("assets/images/logo2.png"),
+                  fit: BoxFit.fitWidth,
                 ),
               ),
             ),
@@ -65,6 +61,18 @@ class MenuLateral extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.pushNamed(context, AppRoutes.lista);
+              },
+            ),
+            const Divider(color: Colors.white54),
+            ListTile(
+              leading: const Icon(Icons.list_alt_rounded, color: Colors.white),
+              title: const Text(
+                "Créditos",
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.pushNamed(context, AppRoutes.creditos);
               },
             ),
             const Divider(color: Colors.white54),

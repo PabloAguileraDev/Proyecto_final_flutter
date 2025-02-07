@@ -7,7 +7,8 @@ class ApiService {
 
   //Método para buscar productos por nombre
   Future<List<dynamic>> getProducts(String query) async {
-    final url = Uri.parse('$_baseUrl/search?query=$query&apiKey=$_apiKey');
+    final url =
+        Uri.parse('$_baseUrl/search?query=$query&number=20&apiKey=$_apiKey');
     final response = await http.get(url);
 
     if (response.statusCode == 200) {

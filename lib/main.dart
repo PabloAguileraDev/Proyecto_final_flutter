@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'services/firebase_options.dart';
 import 'package:provider/provider.dart';
 import 'package:proyecto_final_flutter/routes/routes.dart';
-import 'package:proyecto_final_flutter/screens/listaProductos.dart';
+import 'package:proyecto_final_flutter/services/firebaseService.dart';
 import 'package:proyecto_final_flutter/screens/pantallaInicio.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(
     ChangeNotifierProvider(
       create: (context) => ListaProductos(),
@@ -20,23 +28,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Lista del Mercadona',
+      title: 'Lista de la compra',
       theme: ThemeData(
-        primaryColor: const Color(0xFF4CAF50), // Verde suave (color principal)
-        scaffoldBackgroundColor: const Color(0xFFF9F9F9), // Fondo gris claro
-        cardColor: Colors.white, // Tarjetas blancas
+        primaryColor: const Color(0xFF4CAF50),
+        scaffoldBackgroundColor: const Color(0xFFF9F9F9),
+        cardColor: Colors.white,
         textTheme: const TextTheme(
           bodyLarge: TextStyle(
-              color: Color(0xFF212121), fontSize: 14), // Texto principal
+              color: Color(0xFF212121), fontSize: 14, fontFamily: 'Poppins'),
           bodyMedium: TextStyle(
-              color: Color(0xFF757575), fontSize: 12), // Texto secundario
+              color: Color(0xFF757575), fontSize: 12, fontFamily: 'Poppins'),
         ),
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: const Color(0xFF4CAF50), // Color primario (verde)
-          secondary: const Color(0xFFFF9800), // Color secundario (naranja)
+          primary: const Color(0xFF4CAF50),
+          secondary: const Color(0xFFFF9800),
         ),
         appBarTheme: const AppBarTheme(
-          color: Color(0xFF4CAF50), // AppBar verde
+          color: Color(0xFF4CAF50),
           titleTextStyle: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -44,8 +52,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         buttonTheme: const ButtonThemeData(
-          buttonColor: Color(0xFFFF9800), // Botones principales en naranja
-          textTheme: ButtonTextTheme.primary, // Texto blanco sobre botones
+          buttonColor: Color(0xFFFF9800),
+          textTheme: ButtonTextTheme.primary,
         ),
       ),
       home: const PantallaInicio(),

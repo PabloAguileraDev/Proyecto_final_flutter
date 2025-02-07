@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:proyecto_final_flutter/screens/listaProductos.dart';
+import 'package:proyecto_final_flutter/screens/detallesProducto.dart';
+import 'package:proyecto_final_flutter/services/firebaseService.dart';
 import 'package:proyecto_final_flutter/screens/menuLateral.dart';
-import 'package:proyecto_final_flutter/screens/screens.dart';
+import 'package:proyecto_final_flutter/services/apiService.dart';
 
 class Lista extends StatefulWidget {
   const Lista({super.key});
@@ -101,6 +102,15 @@ class _ListaState extends State<Lista> {
                           icon: const Icon(Icons.delete, color: Colors.red),
                           onPressed: () => deleteProduct(producto['id']),
                         ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  DetallesProducto(productoId: producto['id']),
+                            ),
+                          );
+                        },
                       ),
                     );
                   },
